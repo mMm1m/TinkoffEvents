@@ -1,7 +1,5 @@
 package util
 
-import "TinkoffSmartHouse/entities"
-
 func encodeULEB128(int) []byte {
 	return make([]byte, 0)
 }
@@ -21,8 +19,4 @@ func getConnection(url string) string {
 
 func removeSpaces(string) string {
 	return ""
-}
-
-func findTime(packets *entities.Packets) int {
-	return 0
 }

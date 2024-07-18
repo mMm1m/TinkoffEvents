@@ -10,3 +10,11 @@ type Payload struct {
 	Cmd     constants.CMD      `json:"cmd"`
 	CmdBody ByteInterface      `json:"cmd_body,omitempty"`
 }
+
+func (pl Payload) toBytes() []byte {
+	return make([]byte, 0)
+}
+
+func payloadFromBytes([]byte) *Payload {
+	return &Payload{}
+}

@@ -5,5 +5,6 @@ type Name struct {
 }
 
 func (name Name) toBytes() []byte {
-	return []byte(name.DevName)
+	byteArr := []byte{byte(len(name.DevName))}
+	return append(byteArr, []byte(name.DevName)...)
 }

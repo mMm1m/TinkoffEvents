@@ -14,9 +14,19 @@ type Value struct {
 }
 
 func (sw Switch) toBytes() []byte {
-	return make([]byte, 0)
+	devNameLen := byte(len(sw.DevName))
+	stringBytes := []byte(sw.DevName)
+	var byteArr []byte = []byte{devNameLen}
+	byteArr = append(byteArr, stringBytes...)
+	byteArr = append(byteArr, byte(len(sw.DevProps.DevNames)))
+	for _, i := range sw.DevProps.DevNames {
+		tmp := []byte{byte(len(i))}
+		tmp = append(tmp, []byte(i)...)
+		byteArr = append(byteArr, tmp...)
+	}
+	return byteArr
 }
 
-func (sw Value) toBytes() []byte {
-	return make([]byte, 0)
+func (v Value) toBytes() []byte {
+	return []byte{v.Value}
 }

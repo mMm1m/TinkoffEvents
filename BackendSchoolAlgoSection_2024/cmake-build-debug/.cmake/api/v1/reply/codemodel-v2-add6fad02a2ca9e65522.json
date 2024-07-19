@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BackendSchoolAlgoSection_2024",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BackendSchoolAlgoSection_2024::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BackendSchoolAlgoSection_2024-Debug-fa5e164ed44f3a0ad395.json",
+					"name" : "BackendSchoolAlgoSection_2024",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/max/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/TinkoffEvents/BackendSchoolAlgoSection_2024/cmake-build-debug",
+		"source" : "/home/max/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/TinkoffEvents/BackendSchoolAlgoSection_2024"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,5 +1,10 @@
 package util
 
+import (
+	"TinkoffSmartHouse/constants"
+	"fmt"
+)
+
 func EncodeULEB128(int) []byte {
 	return make([]byte, 0)
 }
@@ -14,7 +19,10 @@ func CRC8Simple([]byte) byte {
 }
 
 func getConnection(url string) string {
-	return ""
+	if url == "" {
+		return fmt.Sprintf("%v://%v:%v", constants.TYPE, constants.HOST, constants.PORT)
+	}
+	return url
 }
 
 func removeSpaces(string) string {

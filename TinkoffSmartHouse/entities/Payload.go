@@ -86,7 +86,7 @@ func parseCmdBody(device constants.DEV_TYPE, cmd constants.CMD, cmdBodyBytes []b
 	return nil
 }
 
-func (pl Payload) toBytes() []byte {
+func (pl Payload) ToBytes() []byte {
 	byteArr := make([]byte, 0)
 	byteArr = append(byteArr, util.EncodeULEB128(pl.Src)...)
 	byteArr = append(byteArr, util.EncodeULEB128(pl.Dst)...)

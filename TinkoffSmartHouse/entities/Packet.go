@@ -13,7 +13,7 @@ type Packet struct {
 
 type Packets []Packet
 
-func (pcs Packets) toBytes() []byte {
+func (pcs Packets) ToBytes() []byte {
 	bytesArr := make([]byte, 0)
 	for _, packet := range pcs {
 		bytesArr = append(bytesArr, packet.toBytes()...)
@@ -21,7 +21,7 @@ func (pcs Packets) toBytes() []byte {
 	return bytesArr
 }
 
-func packetsFromBytes(data []byte) *Packets {
+func PacketsFromBytes(data []byte) *Packets {
 	size, offset := len(data), 0
 	var pcts Packets
 	for offset < size {
@@ -35,7 +35,7 @@ func packetsFromBytes(data []byte) *Packets {
 func (pcs Packet) toBytes() []byte {
 	bytesArr := make([]byte, 0)
 	bytesArr = append(bytesArr, pcs.Length)
-	bytesArr = append(bytesArr, pcs.Payload.toBytes()...)
+	bytesArr = append(bytesArr, pcs.Payload.ToBytes()...)
 	bytesArr = append(bytesArr, pcs.Crc8)
 	return bytesArr
 }

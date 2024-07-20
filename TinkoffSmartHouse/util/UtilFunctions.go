@@ -55,14 +55,14 @@ func CRC8Simple(bytes []byte) byte {
 	return crc8
 }
 
-func getConnection(url string) string {
+func GetConnection(url string) string {
 	if url == "" {
 		return fmt.Sprintf("%v://%v:%v", constants.TYPE, constants.HOST, constants.PORT)
 	}
 	return url
 }
 
-func removeSpaces(str string) string {
+func RemoveSpaces(str string) string {
 	b := strings.Builder{}
 	b.Grow(len(str))
 	for _, ch := range str {

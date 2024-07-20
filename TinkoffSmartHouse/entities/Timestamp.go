@@ -13,7 +13,7 @@ func (ts Timestamp) toBytes() []byte {
 	return util.EncodeULEB128(ts.Timestamp)
 }
 
-func findTime(packets *Packets) int {
+func FindTime(packets *Packets) int {
 	for _, packet := range *packets {
 		if packet.Payload.DevType == constants.CLOCK && packet.Payload.Cmd == constants.TICK {
 			return packet.Payload.CmdBody.(Timestamp).Timestamp

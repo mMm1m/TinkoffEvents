@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Eternal_Contest",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Eternal_Contest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Eternal_Contest-Debug-37aab9649bd50d4c499b.json",
+					"name" : "Eternal_Contest",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/max/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/TinkoffEvents/Eternal Contest/cmake-build-debug",
+		"source" : "/home/max/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/TinkoffEvents/Eternal Contest"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
